@@ -7,4 +7,18 @@ int main() {
 
   std::cout << "$ "; //printing prompt
 
+  //keeps the program alive to handle multiple commands.
+  while (true) {
+        std::cout << "$ ";
+
+        std::string input;
+        std::getline(std::cin, input);
+
+        // If user hits enter without typing, skip the error message
+        if (!input.empty()) {
+            std::cout << input << ": command not found" << std::endl;
+        }
+    }
+
+    return 0;
 }
