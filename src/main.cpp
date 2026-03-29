@@ -2,10 +2,9 @@
 #include <string>
 
 int main() {
-  // Flush after every std::cout / std:cerr
-  std::cout << std::unitbuf;
-  std::cerr << std::unitbuf;
+  std::cout << std::unitbuf; //Forces the output to be printed immediately
+  std::cerr << std::unitbuf; //used for error messages to show up on screen
 
-  // TODO: Uncomment the code below to pass the first stage
-  // std::cout << "$ ";
+  std::cout << "$ "; //printing prompt
+
 }
