@@ -14,6 +14,10 @@ int main() {
         std::string input;
         std::getline(std::cin, input);
 
+        if (!std::getline(std::cin, input)) {
+            break; 
+        }
+
         // If user hits enter without typing, skip the error message
         if (!input.empty()) {
             std::cout << input << ": command not found" << std::endl;
