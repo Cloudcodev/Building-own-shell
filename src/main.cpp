@@ -2,11 +2,10 @@
 #include <string>
 
 int main() {
-  std::cout << std::unitbuf; //Forces the output to be printed immediately
-  std::cerr << std::unitbuf; //used for error messages to show up on screen
+    std::cout << std::unitbuf;
+    std::cerr << std::unitbuf;
 
-  //keeps the program alive to handle multiple commands.
-  while (true) {
+    while (true) {
         std::cout << "$ ";
 
         std::string input;
@@ -14,10 +13,16 @@ int main() {
             break; 
         }
 
-        // If user hits enter without typing, skip the error message
-        if (!input.empty()) {
-            std::cout << input << ": command not found" << std::endl;
+        // This check handles both "exit" and "exit 0".
+        if (input == "exit 0" || input == "exit") {
+            break;
         }
+
+        if (input.empty()) {
+            continue;
+        }
+
+        std::cout << input << ": command not found" << std::endl;
     }
 
     return 0;
