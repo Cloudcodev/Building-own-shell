@@ -17,7 +17,7 @@ int main() {
 
         //adding feature: "echo"
         if (input.substr(0, 5) == "echo ") {
-        std::cout << input.substr(5) << std::endl;
+        std::cout << input.substr(5) << std::endl; // starts at index 5 and prints everything until the end.
         continue; 
     }
         if (!input.empty()) {
