@@ -1,4 +1,4 @@
-C++ Unix Shell Implementation
+# C++ Unix Shell Implementation
 
 A custom POSIX-compliant shell built from scratch in C++. This project explores the fundamentals of command-line interfaces, process management, and terminal I/O.
 
