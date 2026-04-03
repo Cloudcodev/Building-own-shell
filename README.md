@@ -15,4 +15,4 @@ A custom POSIX-compliant shell built from scratch in C++. This project explores 
 
 ## Running the Project
 1. Clone the repository.
-2. Execute the build script: `./your_program.sh`
+2. Execute the build script: ./run.sh
