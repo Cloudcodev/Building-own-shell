@@ -1,34 +1,18 @@
-[![progress-banner](https://backend.codecrafters.io/progress/shell/197c46e3-50ca-4948-8bc6-33cb7cb27640)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
+C++ Unix Shell Implementation
 
-This is a starting point for C++ solutions to the
-["Build Your Own Shell" Challenge](https://app.codecrafters.io/courses/shell/overview).
+A custom POSIX-compliant shell built from scratch in C++. This project explores the fundamentals of command-line interfaces, process management, and terminal I/O.
 
-In this challenge, you'll build your own POSIX compliant shell that's capable of
-interpreting shell commands, running external programs and builtin commands like
-cd, pwd, echo and more. Along the way, you'll learn about shell command parsing,
-REPLs, builtin commands, and more.
+## Features
+- **REPL Architecture:** Implements a standard Read-Eval-Print Loop for continuous command processing.
+- **Built-in Commands:** Custom implementations of `echo` and `exit`.
+- **String Parsing:** Robust tokenization of user input to separate commands from arguments.
+- **I/O Buffering:** Manual management of standard output streams to ensure real-time feedback.
 
-**Note**: If you're viewing this repo on GitHub, head over to
-[codecrafters.io](https://codecrafters.io) to try the challenge.
+## Technical Highlights
+- **Language:** C++17
+- **Logic:** Utilizes `std::getline` for input and `std::unitbuf` for non-buffered output.
+- **Safety:** Implements boundary checking to prevent memory faults during string manipulation.
 
-# Passing the first stage
-
-The entry point for your `shell` implementation is in `src/main.cpp`. Study and
-uncomment the relevant code, then run the command below to execute the tests on
-our servers:
-
-```sh
-codecrafters submit
-```
-
-Time to move on to the next stage!
-
-# Stage 2 & beyond
-
-Note: This section is for stages 2 and beyond.
-
-1. Ensure you have `cmake` installed locally
-1. Run `./your_program.sh` to run your program, which is implemented in
-   `src/main.cpp`.
-1. Run `codecrafters submit` to submit your solution to CodeCrafters. Test
-   output will be streamed to your terminal.
+## Running the Project
+1. Clone the repository.
+2. Execute the build script: `./your_program.sh`
